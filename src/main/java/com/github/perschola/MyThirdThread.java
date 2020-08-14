@@ -1,12 +1,13 @@
 package com.github.perschola;
 
-public class MyObject implements Runnable {
+public class MyThirdThread implements Runnable {
+
+    @Override
     public void run() {
         try {
 
-
             for (int i = 1; i <= 5; i++) {
-                Thread.sleep(2000);
+                Thread.sleep(1000);
                 System.out.println(i);
             }
         }catch (InterruptedException e){
@@ -14,3 +15,4 @@ public class MyObject implements Runnable {
         }
     }
 }
+
